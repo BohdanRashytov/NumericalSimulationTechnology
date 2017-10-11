@@ -10,8 +10,16 @@ lazy val root = (project in file("."))
 
 lazy val nst1 = (project in file ("nst1"))
 .settings(
+  libraryDependencies += "gov.nist.math" % "jama" % "1.0.3",
+  libraryDependencies += "com.github.yannrichet" % "JMathPlot" % "1.0",
+  libraryDependencies += "com.github.yannrichet" % "JMathIO" % "1.0",
+  libraryDependencies += "com.github.yannrichet" % "JMathArray" % "1.0"
+)
+
+lazy val nst2 = (project in file ("nst2"))
+  .settings(
     libraryDependencies += "gov.nist.math" % "jama" % "1.0.3",
     libraryDependencies += "com.github.yannrichet" % "JMathPlot" % "1.0",
     libraryDependencies += "com.github.yannrichet" % "JMathIO" % "1.0",
     libraryDependencies += "com.github.yannrichet" % "JMathArray" % "1.0"
-)
+  )
