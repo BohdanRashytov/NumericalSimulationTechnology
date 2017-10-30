@@ -23,3 +23,11 @@ lazy val nst2 = (project in file ("nst2"))
     libraryDependencies += "com.github.yannrichet" % "JMathIO" % "1.0",
     libraryDependencies += "com.github.yannrichet" % "JMathArray" % "1.0"
   )
+
+lazy val nst3 = (project in file ("nst3"))
+  .settings(
+    libraryDependencies += "gov.nist.math" % "jama" % "1.0.3",
+    libraryDependencies += "com.github.yannrichet" % "JMathPlot" % "1.0",
+    libraryDependencies += "com.github.yannrichet" % "JMathIO" % "1.0",
+    libraryDependencies += "com.github.yannrichet" % "JMathArray" % "1.0"
+  )
